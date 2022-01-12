@@ -1,25 +1,43 @@
 header{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: -50px;
-  margin-bottom: -50;
+justify-content: space-around;
+
 }
-.signbtn {
-  width: 100px;
-  height: 50px;
-  margin: 80px;
+.sign {
+  border: 2px solid black;
+  width: 60px;
+  height: 20px;
+  margin-top: 120px;
+  padding: 5px;
 }
+
+a:visited {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
 
 form {
   border: 3px solid #f1f1f1;
+  width: 50%;
+}
+label {
+  font-weight:bolder;
+  font-size:x-large;
 }
 
  input[type=text], input[type=password], input[type=email]{
-  width: 100%;
+   display: flex;
+   flex-direction: row;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box; 
 } 
@@ -30,9 +48,21 @@ form {
     width: 200px;
     justify-content: end;
     border: white;
-
 }
 
+/*homepage*/
+header {
+  size: 1000px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  background-color: lightgray;
+  padding: 1pc;
+  border: 2px solid black;
+}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -44,7 +74,25 @@ form {
 
 }
 @media screen and (min-width: 300px) and (max-width: 425px)  {
-.signbtn {
+body {
+  width: 100%;
+}
+
+  header{
+display: flex;
+flex-direction: row;  
+justify-content: space-around;
+}
+.sign {
+  border: 2px solid black;
+  width: 50px;
+  height: 30px;
+  margin-top: 120px;
+  padding: 5px;
+  
+}
+
+  .signbtn {
   width: 80px;
   height: 40px;
   margin-left: 45px;
