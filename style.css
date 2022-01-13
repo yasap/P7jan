@@ -32,7 +32,7 @@ label {
   font-size:x-large;
 }
 
- input[type=text], input[type=password], input[type=email]{
+ input[type=text], input[type=password], input[type=date], input[type=email]{
    display: flex;
    flex-direction: row;
   width: 60%;
@@ -58,11 +58,32 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 20px;
   background-color: lightgray;
   padding: 1pc;
   border: 2px solid black;
 }
+ .introduction {
+   margin: 40px;
+   padding: 30px;
+   font-size: 20px;
+   border: 5px solid rgb(40, 8, 100);
+ }
+
+ /*post page*/
+
+ .post {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px;
+   margin: 30px;
+   border: 2px solid black;
+ }
+ #description {
+   width: 773px;
+   height: 350px;
+ }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -70,7 +91,6 @@ header {
     display: block;
     float: none;
   }
-
 
 }
 @media screen and (min-width: 300px) and (max-width: 425px)  {
@@ -89,7 +109,6 @@ justify-content: space-around;
   height: 30px;
   margin-top: 120px;
   padding: 5px;
-  
 }
 
   .signbtn {
