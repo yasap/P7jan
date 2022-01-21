@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="style.css" rel="stylesheet" type=text/css>
     <script src="https://kit.fontawesome.com/c6940cd8ec.js" crossorigin="anonymous"></script>
-    <title>groupomania</title>
+    <title>Create a post- Groupomania</title>
 </head>
-
+<body>
 <header>
  <img src="/photo/icon-left-font-monochrome-black.png" alt="groupomania" width="200px" height="200px">
+
 </header>
 
 <div class="menu"> 
-  <div class="fas fa-home"> <a href="/home.html"></a> </div>
-  <i class="fas fa-user"></i>
-  <i href="/signin.html" class="fas fa-sign-out-alt"></i>
+  <a href="/home.html"><i class="fas fa-home"></i></a>
+  <a href="/account.html"><i class="fas fa-user"></i></a>
+  <a href="/signin.html"><i class="fas fa-sign-out-alt"></i></a>
+
 </div>
 
-<div class="post">
+<form class="post">
+
      <label for="text"> Title </label>
-    <input type="text" placeholder="Title" name="title" required>
+    <input type="text" placeholder="Title" name="title" required/>
 
-    <label for="text">Description</label>
-    <textarea> Share your thoughts </textarea> 
+    <label for="message">Description</label>
+    <textarea rows="10" id="message"> Share your thoughts </textarea> 
 
-    <label for="date">Date</label>
-    <input type="date" placeholder="Date" name="Date" required>
-    <label for="image">image</label>
-    <input type="file" placeholder="Enter image" name="img" required class="image" accept="image/*,video/mp4" type="file"></input>
+    <label for="date-created">Date</label>
+    <input type="date" placeholder="Date" id="date-created" name="Date" required>
+    <label for="image">Image</label>
+    <input type="file" placeholder="Enter image" name="img" required class="image" accept="image/*,video/mp4" type="file"/>
 <br>
-  <button class="submit" type="submit"><a href="/home.html">Sign In </a></button>
+  <input class="submit" type="submit"/>
 
-
-</div>
+</form>
+</body>
+</html>

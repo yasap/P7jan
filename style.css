@@ -24,22 +24,34 @@ a:visited {
  
 
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1em auto;
   border: 3px solid #f1f1f1;
   width: 50%;
+  padding: 1em;
+
 }
 label {
-  font-weight:bolder;
-  font-size:x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1em;
+  font-size:medium;
+  align-items: flex-start;
 }
 
- input[type=text], input[type=password], input[type=date], input[type=email]{
+ input[type=text], input[type=password], input[type=date], input[type=email], textarea{
    display: flex;
    flex-direction: row;
-  width: 60%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  box-sizing: border-box; 
+   align-items: flex-start;
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   border: 1px solid #ccc;
+   box-sizing: border-box; 
 } 
 .submit{
     background-color: rgb(4, 179, 71);
@@ -72,27 +84,19 @@ header {
 
  /*post page*/
 
- .post {
+ /* .post {
    display: flex;
    flex-direction: column;
    align-items: center;
    padding: 40px;
    margin: 30px;
    border: 2px solid black;
- }
+ } */
  #description {
    width: 773px;
    height: 350px;
  }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-
-}
 @media screen and (min-width: 300px) and (max-width: 425px)  {
 body {
   width: 100%;
