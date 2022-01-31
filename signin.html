@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="style.css" rel="stylesheet" type=text/css>
-    <script src="https://kit.fontawesome.com/c6940cd8ec.js" crossorigin="anonymous"></script>
+    
     <title>Groupomania signin</title>
 </head>
 <body>
@@ -13,15 +13,18 @@
  <aside class="sign"><a href="/signup.html"> Sign Up </a></aside>
 </header>
 
- <form class="container">
+ <form class="container" id="myform" method="post">
    <label for="email">E-mail</label>
-    <input type="email" placeholder="Enter E-mail" name="email" required>
+    <input type="email" id="email" placeholder="Enter E-mail" name="email" required/>
 
     <label for="psw">Password</label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required/>
 
-    <button class="submit"  type="submit">SIGNIN </button>
+    <input class="submit" id="signinsubmit" value="SignIn" type="submit"/>
 </form>
+
+    <script src="https://kit.fontawesome.com/c6940cd8ec.js" crossorigin="anonymous"></script> 
+    <script src="/js/log.js"></script>
 </body>
 </html>
   

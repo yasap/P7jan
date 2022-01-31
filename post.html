@@ -23,18 +23,19 @@
 <form class="post">
 
      <label for="text"> Title </label>
-    <input type="text" placeholder="Title" name="title" required/>
+    <input type="text" id="title" placeholder="Title" name="title" required/>
 
     <label for="message">Description</label>
     <textarea rows="10" id="message"> Share your thoughts </textarea> 
 
     <label for="date-created">Date</label>
-    <input type="date" placeholder="Date" id="date-created" name="Date" required>
+    <input type="date" placeholder="Date" id="date-created" name="Date" required/>
     <label for="image">Image</label>
-    <input type="file" placeholder="Enter image" name="img" required class="image" accept="image/*,video/mp4" type="file"/>
+    <input type="file" placeholder="Enter image" id="image" name="img" required class="image" accept="image/*,video/mp4" type="file"/>
 <br>
-  <input class="submit" type="submit"/>
+  <input class="submit"  id="postSubmit" type="submit"/>
 
 </form>
+<script src="/js/post.js"></script>
 </body>
 </html>
