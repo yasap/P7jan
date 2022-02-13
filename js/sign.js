@@ -1,28 +1,32 @@
 //SIGNUP//
-var signupsubmit = document.getElementById("signupsubmit");
+var myform = document.getElementById("myform");
 
 
- signupsubmit.addEventListener('click', (e) => {
+myform.addEventListener('submit', (e) => {
     e.preventDefault();
-     console.log("hi");
+    console.log("hi");
     var fname = document.getElementById("fname").value;
     var sname = document.getElementById("sname").value;
     var email = document.getElementById("email").value;
     var psw = document.getElementById("psw").value;
 
+    var ListUsers = localStorage.getItem("storedUsers") ? JSON.parse(localStorage.getItem("storedUsers")) : [];
     var user = {
-        fname: fname,
-        sname: sname,
+        firstname: fname,
+        surname: sname,
         email: email,
-        psw: psw,
+        password: psw,
     }
-   
+
+    ListUsers.push(user);
      
-var json = JSON.stringify(user);
-    localStorage.setItem("loggedInUser",json)
-     console.log("user added");
-     document.location = '/home.html';
+    localStorage.setItem("storedUsers", JSON.stringify(ListUsers));
+    //  user.forEach(console.log);;
+    //  document.location = '/home.html';
+     
     
+     
  })
+
 
 
